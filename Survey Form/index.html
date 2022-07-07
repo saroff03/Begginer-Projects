@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Survey Form">
+    <meta name="keywords" content="HTML, CSS, Survey, Form">
+    <meta name="author" content="Stoyan Sarov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="form">
+        <h1>Lorem Survey Form</h1>
+        <p>Thank you for taking the time to complete this survey</p>
+        <form action="example.php">
+          <fieldset>
+            <label for="fullName">Full Name: <input type="text" name="fullName" id="fullName"></label>
+            <label for="email">Email: <input type="email" name="email" id="email"></label>
+            <label for="dob">Date of Birth: <input type="date" name="dob" id="dob"></label>
+          </fieldset>
+          <fieldset>
+            <label for="occupation">Occupation:</label>
+            <select name="occupation" id="occupation">
+              <option value="occupation">Select current occupation</option>
+              <option value="disabled" disabled>-</option>
+              <option value="employedFullTime">Employed - Full Time</option>
+              <option value="employedPartTime">Employed - Part Time</option>
+              <option value="selfEmployed">Self-Employed</option>
+              <option value="student">Student</option>
+              <option value="preferNotToSay">Prefer not to say</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="recommend">Would you recommend Lorem to a friend?</label>
+            <label>Definitely<input type="radio" name="recommend" id=""></label>
+            <label>Maybe<input type="radio" name="recommend" id=""></label>
+            <label>Not sure<input type="radio" name="recommend" id=""></label>
+          </fieldset>
+          <fieldset>
+            <label for="favFeature">What is your favourite feature at Lorem?</label>
+            <select name="favFeature" id="favFeature">
+              <option value="favFeature">Select an option</option>
+              <option value="disabled" disabled></option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+              <option value="option 4">Option 4</option>
+              <option value="option 5">Option 5</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="improvement">What do you think should be improved? (Select all that apply)</label>
+            <label>Audio<input type="checkbox" name="audio" id="audio"></label>
+            <label>Video<input type="checkbox" name="video" id="video"></label>
+            <label>Text<input type="checkbox" name="text" id="text"></label>
+            <label>Chat<input type="checkbox" name="chat" id="chat"></label>
+            <label for="suggestions">Any additional suggestions? <textarea name="" id="" cols="30" rows="3"></textarea></label>
+            </fieldset>
+            <input type="Submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

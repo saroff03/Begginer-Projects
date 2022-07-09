@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background-color: #a8edea;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.form {
+  border: 1px solid darkgray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+  margin: 100px auto;
+  width: 30vw;
+  max-width: 500px;
+  font-size: 19px;
+}
+h1 {
+  text-align: center;
+  font-size: 60px;
+  margin: auto 5px;
+}
+p {
+  text-align: center;
+  font-size: 22px;
+  margin: auto 5px;
+  padding-bottom: 20px;
+}
+fieldset {
+  border: none;
+}
+.block {
+  display: block;
+}
+input[type="text"] {
+  display: inline-block;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+input[type="email"] {
+  display: inline-block;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+input[type="date"] {
+  display: block;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+input {
+  margin-bottom: 0.8em;
+}
+input[type="radio"] {
+  cursor: pointer;
+  margin-right: 2px;
+}
+input[type="checkbox"] {
+  margin-right: 2px;
+}
+.inline {
+  display: inline;
+}
+.inlineBlock {
+  display: block;
+}
+textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+}
+select {
+  display: block;
+  margin: 0 4px;
+  border: 1px solid darkgray;
+  border-radius: 5px 
+}
+label {
+  margin: 1px 4px;
+  display: block;
+}
+#question , #question2 , #question3 {
+  margin-top: 6px;
+  text-decoration: underline;
+}
+input[type="submit"] {
+  border: 2px solid lightcoral;
+  border-radius: 5px;
+  background-color: lightcoral;
+  color: white;
+  display: block;
+  margin: 1em auto;
+  font-size: 18px;
+  height: 2em;
+  width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  #fullName, #email, #dateOfBirth, select {
+  display: block;
+  width: 100%;
+  }
+  h1 {
+    word-wrap: break-word;
+  }
+}

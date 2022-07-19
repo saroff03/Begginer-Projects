@@ -107,5 +107,6 @@ input[type="submit"] {
   }
   h1 {
     word-wrap: break-word;
+    font-size: 30px;
   }
 }

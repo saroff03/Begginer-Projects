@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Survey Form">
+    <meta name="keywords" content="HTML, CSS, Survey, Form">
+    <meta name="author" content="Stoyan Sarov">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+      <div class="form">
+        <h1>Lorem Survey Form</h1>
+        <p>Thank you for taking the time to complete this survey</p>
+        <form action="example.php">
+          <fieldset>
+            <label for="fullName" class="inline">Full Name: <input type="text" name="fullName" id="fullName" class="inline" placeholder="John Doe" required></label>
+            <label for="email">Email: <input type="email" name="email" id="email" placeholder="email@example.com"></label>
+            <label for="dob" class="block" id="dateOfBirth">Date of Birth: <input type="date" name="dob" id="dob"></label>
+          </fieldset>
+          <fieldset>
+            <label for="occupation">Occupation:</label>
+            <select name="occupation" id="occupation">
+              <option value="occupation">Select current occupation</option>
+              <option value="disabled" disabled>-</option>
+              <option value="employedFullTime">Employed - Full Time</option>
+              <option value="employedPartTime">Employed - Part Time</option>
+              <option value="selfEmployed">Self-Employed</option>
+              <option value="student">Student</option>
+              <option value="preferNotToSay">Prefer not to say</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label class="block" id="question">Would you recommend Lorem to a friend?</label>
+            <label class="block"><input type="radio" name="recommend" >Definitely</label>
+            <label class="block" id="recommend"><input type="radio" name="recommend" >Maybe</label>
+            <label class="block"><input type="radio" name="recommend">Not sure</label>
+          </fieldset>
+          <fieldset>
+            <label for="favFeature" id="question2">What is your favourite feature at Lorem?</label>
+            <select name="favFeature" id="favFeature">
+              <option value="favFeature">Select an option</option>
+              <option value="disabled" disabled>---</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+              <option value="option 4">Option 4</option>
+              <option value="option 5">Option 5</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label  id="question3">What do you think should be improved? (Select all that apply)</label>
+            <label class="block"><input type="checkbox" name="audio" id="audio" class="inline">Audio</label>
+            <label class="block"><input type="checkbox" name="video" id="video" class="inline">Video</label>
+            <label class="block"><input type="checkbox" name="text" id="text" class="inline">Text</label>
+            <label class="block"><input type="checkbox" name="chat" id="chat" class="inline">Chat</label>
+            <label>Any additional suggestions? <textarea cols="30" rows="3" placeholder="Start typing..." ></textarea></label>
+            </fieldset>
+            <input type="Submit" value="Submit">
+        </form>
+      </div>
+  </body>
+</html>
